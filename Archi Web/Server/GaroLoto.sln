@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GaroLoto", "GaroLoto\GaroLoto.csproj", "{015CA8D1-520F-45B0-B19E-3DA746DE0555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaroLotoDAL", "GaroLotoDAL\GaroLotoDAL.csproj", "{A5D3CD05-9688-4F0E-8ED8-8A9EB3BEC7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{21925065-8A5B-4620-AED6-3E2D5D74E480}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{015CA8D1-520F-45B0-B19E-3DA746DE0555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015CA8D1-520F-45B0-B19E-3DA746DE0555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015CA8D1-520F-45B0-B19E-3DA746DE0555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015CA8D1-520F-45B0-B19E-3DA746DE0555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D3CD05-9688-4F0E-8ED8-8A9EB3BEC7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D3CD05-9688-4F0E-8ED8-8A9EB3BEC7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D3CD05-9688-4F0E-8ED8-8A9EB3BEC7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D3CD05-9688-4F0E-8ED8-8A9EB3BEC7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21925065-8A5B-4620-AED6-3E2D5D74E480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21925065-8A5B-4620-AED6-3E2D5D74E480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21925065-8A5B-4620-AED6-3E2D5D74E480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21925065-8A5B-4620-AED6-3E2D5D74E480}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EB4F1CE-7100-409F-91FA-857E88FF6918}
+	EndGlobalSection
+EndGlobal

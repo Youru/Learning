@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using GaroLotoDAL;
 
 namespace GaroLoto
 {
@@ -23,10 +25,10 @@ namespace GaroLoto
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<Configuration>(Configuration.GetSection("ConnectionStrings"));
             services.AddMvc();
             services.AddCors();
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //       options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient<IGameDal, GameDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
