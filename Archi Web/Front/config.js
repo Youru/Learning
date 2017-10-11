@@ -1,5 +1,5 @@
 var configModule = (function () {
-    var rootApi = 'http://localhost:50594/';
+    var rootApi = 'http://garolotoapi.azurewebsites.net/';
     var gameApi = rootApi + 'api/game';
 
 
