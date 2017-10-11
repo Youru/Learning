@@ -1,6 +1,6 @@
 ﻿using Dapper;
 using Entities;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -19,9 +19,9 @@ namespace GaroLotoDAL
             }
         }
 
-        public GameDal(IConfiguration configuration)
+        public GameDal(IOptions<Configuration> configuration)
         {
-            _connectionString = configuration["ConnectionStrings:DefaultConnection"];
+            _connectionString = configuration.Value.DefaultConnection;
         }
 
         public IEnumerable<Game> GetGames()
