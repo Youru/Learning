@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GaroLotoDAL
+﻿namespace GaroLotoDAL
 {
     public class Configuration
     {

@@ -1,12 +1,9 @@
 ﻿using Dapper;
 using Entities;
 using Microsoft.Extensions.Options;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GaroLotoDAL
 {
