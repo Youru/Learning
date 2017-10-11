@@ -32,7 +32,7 @@ namespace GaroLotoDAL
             using (var conn = Connection)
             {
                 var cmd = new CommandDefinition(
-                    "SELECT * FROM Game");
+                    "SELECT * FROM [GaroLoto].Game");
 
                 return SqlMapper.Query<Game>(conn, cmd);
 
