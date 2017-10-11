@@ -19,10 +19,11 @@ namespace GaroLoto
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<Configuration>(Configuration.GetSection("ConnectionStrings"));
+            //services.Configure<Configuration>(Configuration.GetSection("ConnectionStrings"));
             services.AddMvc();
             services.AddCors();
             services.AddTransient<IGameDal, GameDal>();
+            services.AddSingleton(Configuration);
             // Register the Swagger generator, defining one or more Swagger documents
             services.AddSwaggerGen(c =>
             {
